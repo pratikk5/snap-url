@@ -60,7 +60,7 @@ export default function Home() {
             </div>
             <div className="p-6 border border-purple-300 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold text-purple-600">🔒 Secure & Private</h3>
-              <p className="mt-2">We don't track or store your personal data.</p>
+              <p className="mt-2">We don&apos;t track or store your personal data.</p>
             </div>
             <div className="p-6 border border-purple-300 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold text-purple-600">📊 Analytics</h3>
