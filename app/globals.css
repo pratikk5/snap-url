@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Set a default font */
+    line-height: 1.6; /* Improve readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Remove default margins */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+}
+
+button {
+    cursor: pointer; /* Change cursor to pointer for buttons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem; /* Add padding for smaller screens */
+    }
+}
+body {
+    font-family: var(--font-geist-sans), sans-serif;
+    font-weight: 700; /* Ensures the bold effect is applied globally */
+  }
+  
