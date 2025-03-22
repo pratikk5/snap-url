@@ -80,7 +80,7 @@ export default function Home() {
               <p className="mt-2">Enter the long URL you want to shorten.</p>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold">2️⃣ Click 'Shorten'</h3>
+              <h3 className="text-xl font-semibold">2️⃣ Click &apos;Shorten&apos;</h3>
               <p className="mt-2">Generate a shortened URL instantly.</p>
             </div>
             <div className="p-6">
