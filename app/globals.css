@@ -31,8 +31,3 @@ button {
         padding: 0 1rem; /* Add padding for smaller screens */
     }
 }
-body {
-    font-family: var(--font-geist-sans), sans-serif;
-    font-weight: 700; /* Ensures the bold effect is applied globally */
-  }
-  
