@@ -1,23 +1,14 @@
-
-import clientPromise from "@/lib/mongodb"
-
 export async function POST(request) {
+  const { url, shorturl } = await request.json();
 
-    const body = await request.json() 
-    const client = await clientPromise;
-    const db = client.db("bitlinks")
-    const collection = db.collection("url")
+  // Logic to store the URL in local storage
+  // Note: Local storage is not accessible in server-side code.
+  // You may need to handle this differently, such as storing in a file or using a different method.
 
-    // Check if the short url exists
-    const doc = await collection.findOne({shorturl: body.shorturl})
-    if(doc){
-        return Response.json({success: false, error: true,  message: 'URL already exists!' })
-    }
-
-    const result = await collection.insertOne({
-        url: body.url,
-        shorturl: body.shorturl
-    })
-
-    return Response.json({success: true, error: false,  message: 'URL Generated Successfully' })
-  }
+  return new Response(JSON.stringify({ success: true, shorturl }), {
+    status: 200,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+}

@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    optimizeFonts: true, // Optimizes font loading
+    // Remove the optimizeFonts option
+    // optimizeFonts: true, // This line should be removed
   },
 };
 
